@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Kotaro Nakamura's Portfolio</title>
+        <meta name="description" content="Complexity">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="Portforio_css/Portforio.css">
+        <script src="Portforio_js/Portforio.js" defer></script>
+        <link rel="icon" href="Complexity_images/generative04.webp" type="image/webp">
+    </head>
+    <body>
+        <div id="loading">
+           <p>Loading...</p> 
+            <div id="loading-screen"></div>
+        </div>
+
+        <nav>
+            <button id="menu-open" class="btn-menu">
+                <!-- メニューを開くボタン -->
+                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <title>メニューを開く</title>
+                    <path clip-rule="evenodd" d="m4.25 8c0-.41421.33579-.75.75-.75h14c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.33579-.75-.75zm0 4c0-.4142.33579-.75.75-.75h14c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.3358-.75-.75zm.75 3.25c-.41421 0-.75.3358-.75.75s.33579.75.75.75h14c.4142 0 .75-.3358.75-.75s-.3358-.75-.75-.75z" fill-rule="evenodd"/>
+                </svg>
+            </button>
+            <div id="menu-panel">
+                <!-- メニューコンテンツ -->
+                <button id="menu-close" class="btn-menu">
+                    <!-- メニューを閉じるボタン -->
+                    <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <title>メニューを閉じる</title>
+                        <path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/>
+                    </svg>
+                </button>
+                <ul class="menu-list">
+                    <!-- リンクリスト -->
+
+                    <li><a href="mailto:kokasen.1984@icloud.com">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <header>  
+            <h1>
+                <a href="Portforio.html">Kotaro Nakamura's Portfolio</a>
+            </h1>
+        </header>
+
+        <main>
+        <section>
+            <h3>自己紹介</h3>
+            <p>
+                初めまして。私は中村胡太朗と申します。<br>
+                2023年11月よりプログラミングの学習を開始し、まずはProcessingを用いて基礎的な考え方や構文を学びました。<br>
+                その後、HTML/CSSの学習を経て、現在はPythonおよびWebフレームワークのDjangoを中心に、システム開発全般について継続的に学習を進めています。
+            </p>
+        </section>
+        
+        <section>
+            <h3>学習の流れ</h3>
+            <ul>
+                <li><strong>2023年11月〜2024年5月：</strong> Processingを通じたプログラミングの基礎学習</li>
+                <li><strong>2024年5月〜6月：</strong> HTML/CSSの学習、Python基礎構文の習得</li>
+                <li><strong>2024年6月〜9月：</strong> JavaScriptとPythonの応用学習</li>
+                <li><strong>2024年9月〜現在：</strong> Djangoを用いたWeb開発、SQLを用いたデータベース操作、Web技術全般の理解</li>
+            </ul>
+        </section>
+        <section>
+  <h3>参考書と学習方法</h3>
+  <ul>
+    <li>
+      <strong><a href="https://www.oreilly.co.jp/books/9784873117737/" target="_blank" rel="noopener">Processingをはじめよう</a></strong>（ケーシー・リース、ベン・フライ 著）<br>
+      プログラミングの基本概念（変数、関数、条件分岐、反復）を写経しながら理解に努めました。
+    </li>
+    <li>
+      <strong><a href="https://wgn-obs.shop-pro.jp/?pid=144269527" target="_blank" rel="noopener">The Nature of Code</a></strong>（ダニエル・シフマン 著）<br>
+      ベクトル・物理演算・三角関数・可変長配列・ポリモーフィズム・自立エージェント等をコードで確認し、概念を理解できるように努めました。
+    </li>
+    <li>
+      <strong><a href="https://www.sbcr.jp/product/4815618469/" target="_blank" rel="noopener">1冊ですべて身につくHTML & CSSとWebデザイン入門講座</a></strong>（Mana 著）<br>
+      実際にWebサイトをコーディングして制作を行いながら学習しました。
+    </li>
+    <li>
+      <strong><a href="https://www.sbcr.jp/product/4815615758/" target="_blank" rel="noopener">1冊ですべて身につくJavaScript入門講座</a></strong>（Mana 著）<br>
+      JavaScriptによるアニメーション・DOM操作の実践を実際にコーディングを行いながら学習をしました。
+    </li>
+    <li>
+      <strong><a href="https://www.shoeisha.co.jp/book/detail/9784798153193" target="_blank" rel="noopener">Python1年生</a></strong>（森巧 尚 著）<br>
+      Pythonの文法・型の基礎を理解することに努めました。
+    </li>
+    <li>
+      <strong><a href="https://www.shoeisha.co.jp/book/detail/9784798163642" target="_blank" rel="noopener">独習Python</a></strong>（山田 祥寛 著）<br>
+      型、変数、反復、条件分岐、関数、クラス、ライブラリなどを体系的に学習しました。<br>
+      現在2周目に入り学習を継続中です。
+    </li>
+    <li>
+      <strong><a href="https://www.shuwasystem.co.jp/book/9784798066059.html" target="_blank" rel="noopener">Djangoのツボとコツがゼッタイにわかる本</a></strong>（大橋 亮太、古田 薫 著）<br>
+      仮想環境やMVCの理解、実際のWebアプリ開発を通じてDjangoの使い方を理解するよう努めました。
+    </li>
+    <li>
+      <strong><a href="https://www.shoeisha.co.jp/book/detail/9784798144450" target="_blank" rel="noopener">SQL ゼロからはじめるデータベース操作</a></strong>（ミック 著）<br>
+      PostgreSQLを用いたDBの基本操作をターミナルから実践し、データベース操作について学習しました。
+    </li>
+    <li>
+      <strong><a href="https://www.sbcr.jp/product/4815625948/" target="_blank" rel="noopener">この1冊で全部わかるWeb技術の基本</a></strong>（NRIネットコム 著）<br>
+      HTTP、ドメイン、フロント・バックエンドの役割など、Webの全体像を学習しました。
+    </li>
+    <li>
+      <strong><a href="https://gihyo.jp/book/2024/978-4-297-14571-2" target="_blank" rel="noopener">プロになるためのWeb技術入門</a></strong>（小森 裕介 著）<br>
+      より実践的なWebシステムや、技術の全体像を理解するために、現在学習中です。
+    </li>
+  </ul>
+</section>
+
+        <section>
+            <h3>現在の目標</h3>
+            <p>
+                Djangoを中心としたWebアプリケーションの開発スキルを高めつつ、バックエンドとフロントエンド両方に対応できる開発者を目指しています。<br>
+            </p>
+        </section>
+    </main>
+
+        
+    </body>
+</html>

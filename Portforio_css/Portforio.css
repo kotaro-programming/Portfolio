@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+html{
+    font-size: 100%;
+}
+
+:root{
+    --website-black: #000;
+    --website-white: #fff;
+    --white: rgba(255,255,255,.6);
+    --gray: rgba(245,245,245,.6);
+    --website-pink: #F5E8E3;
+}
+
+body{
+    background-color: #fff;
+ }
+
+#loading{
+    background-color: var(--website-white);
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+#loading-screen{
+    background-color: var(--website-pink);
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    translate: 0 100vh;
+}
+
+.btn-menu{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 4;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    height: 4rem;
+    width: 4rem;
+    transition: .4s;
+}
+
+.btn-menu svg{
+    fill: var(--website-black);
+    margin-top: .25rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.menu-close{
+    background-color: var(--gray);
+}
+
+#menu-close svg{
+    fill: var(--website-black);
+}
+
+
+#menu-panel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 8rem 2rem 2rem;
+    width: max(32vw,20rem);
+    height: 100vh;
+    background-color: var(--gray);
+    box-shadow: 0 0 2rem var(--gray);
+    font-family: 'Open Sans';
+    translate: 100vw;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-list li{
+    margin: 1.5rem 0;
+    opacity: 1;
+}
+
+.menu-list a{
+    color: var(--website-black);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header{
+    
+    margin-top: 6rem;
+    text-align: center;
+
+}
+
+main {
+    margin-top: 8rem; 
+}
+
+h1 a{
+    text-decoration: none;
+    color: var(--website-black);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.03rem; /* 全体のデフォルト */
+}
+
+img{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main > section {
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--website-black);
+    line-height: 1.8;
+    background-color: var(--gray);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+main > section h3 {
+    font-size: 1.8rem;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--website-black);
+    border-left: 5px solid var(--website-black);
+    padding-left: 0.75rem;
+}
+
+main > section ul {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+main > section ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+main > section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--website-pink); 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+
+@media(min-width: 768px){
+    header{
+        text-align: center;
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+
+    
+
+
+    h1 a{
+        text-decoration: none;
+        color: var(--website-black);
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.03rem; /* 全体のデフォルト */
+    }
+    
+
+    main > section {
+        padding: 3rem 2rem;
+    }
+
+    main > section h3 {
+        font-size: 2rem;
+    }
+
+    main > section p,
+    main > section ul li {
+        font-size: 1.05rem;
+    }
+    
+}
+
